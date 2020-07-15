@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-modules src/test.js"
+    "test": "node --experimental-modules src/test.js",
+    "test:debug": "node --inspect-brk --experimental-modules src/test.js"
   },
   "type": "module",
   "author": "",

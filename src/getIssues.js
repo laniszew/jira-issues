@@ -7,7 +7,7 @@ export default async () => {
     let total = 0;
 
     do {
-        const response = await request.get({ url: GET_PROJECT_ISSUES_API_URL('project = IC', {maxResults:MAX_ISSUES, startAt}), json: true });
+        const response = await request.get({ url: GET_PROJECT_ISSUES_API_URL('project = IC', { maxResults:MAX_ISSUES, startAt }), json: true });
         allIssues = [...allIssues, ...response.issues];
 
         total = response.total;
